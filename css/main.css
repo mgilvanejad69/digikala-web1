@@ -1,0 +1,3871 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #afafaf;
+}
+
+@font-face {
+  font-family: iranyekan;
+  src: url(../font/YekanBakh-Regular.woff);
+}
+body {
+  overflow: auto;
+}
+div.main {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.main > div.header {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #ffffff;
+}
+div.main > div.header > header {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+}
+/*هدر سایت*/
+div.main > div.header > header > div.headerposter {
+  width: 100%;
+  height: 60px;
+}
+div.main > div.header > header > div.headerposter > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.main > div.header > header > div.headertop {
+  width: 100%;
+  height: 68px;
+  padding: 0 16px;
+  position: relative;
+  max-width: 1676px;
+  margin: 0 auto;
+}
+div.main > div.header > header > div.headertop > div.headerbox {
+  width: 100%;
+  height: 100%;
+  padding: 12px 0;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > div.profile {
+  height: 40px;
+  padding: 8px 16px;
+  display: flex;
+  cursor: pointer;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26.03px;
+  color: rgb(12, 12, 12);
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 8px;
+  font-stretch: 100%;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > div.profile
+  > div.profileicon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > span {
+  width: 1px;
+  height: 24px;
+  margin: 0 12px;
+  background-color: rgb(224, 224, 226);
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > div.shoppingbox {
+  width: 40px;
+  height: 40px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > div.shoppingbox
+  > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 8px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.profilebox
+  > div.shoppingbox
+  > a
+  > div {
+  width: 24px;
+  height: 24px;
+}
+div.main > div.header > header > div.headertop > div.headerbox > div.searchbar {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > a {
+  display: block;
+  text-decoration: none;
+  width: 115px;
+  height: 30px;
+  margin: 0 0 0 20px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > a
+  > div.logo {
+  width: 100%;
+  height: 100%;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > a
+  > div.logo
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search {
+  flex-grow: 1;
+  height: 100%;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox {
+  width: 600px;
+  height: 100%;
+  background-color: rgb(240, 240, 241);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox
+  > div.searchitems {
+  width: 568px;
+  height: 26.03px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 241);
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox
+  > div.searchitems
+  > div.searchimg {
+  width: 24px;
+  height: 24px;
+  background-color: rgb(240, 240, 241);
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox
+  > div.searchitems
+  > div.searchimg
+  > img {
+  width: 24px;
+  height: 24px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox
+  > div.searchitems
+  > span {
+  width: 544px;
+  height: 24px;
+  background-color: rgb(240, 240, 241);
+  padding: 0 16px;
+}
+div.main
+  > div.header
+  > header
+  > div.headertop
+  > div.headerbox
+  > div.searchbar
+  > div.search
+  > div.searchbox
+  > div.searchitems
+  > span
+  > div {
+  display: flex;
+  align-items: center;
+  font-family: iranyekan;
+  font-size: 12px;
+  color: #81858b;
+  line-height: 26.03px;
+}
+/*هدر سایت*/
+
+/*نوار منوی سایت*/
+div.main > div.header > header > nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.585);
+  position: relative;
+}
+div.main > div.header > header > nav > div.menubar {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 1676px;
+}
+div.main > div.header > header > nav > div.menubar > div.menu {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*منوی بازشونده دسته بندی کالاها*/
+div.main > div.header > header > nav > div.menubar > div.menu > div.category {
+  width: 142.05px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > span {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30.1px;
+  color: rgb(63, 64, 100);
+  cursor: pointer;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox {
+  width: 900px;
+  height: 520px;
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 40px;
+  right: 0;
+  border-bottom-left-radius: 8px;
+  box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2 {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  overflow-y: scroll;
+  direction: ltr;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu {
+  width: 200px;
+  height: 52.03px;
+  display: flex;
+  background-color: #f3f3f3;
+  transition-delay: 200ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem {
+  height: 0;
+  position: absolute;
+  top: 0px;
+  right: 200px;
+  overflow-y: scroll;
+  direction: ltr;
+  display: flex;
+  padding: 0px 20px 0 20px;
+  flex-direction: column;
+  transition-delay: 200ms;
+  background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.5);
+  z-index: 7;
+  cursor: pointer;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > a {
+  width: 100%;
+  height: 52.03px;
+  text-decoration: none;
+  padding: 12px 8px;
+  transition-delay: 200ms;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > a
+  > span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > a
+  > span
+  > div.catmenuicon {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > a
+  > span
+  > div.catmenuicon
+  > svg {
+  fill: rgb(63, 64, 100);
+  transition-delay: 200ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > a
+  > span
+  > p {
+  line-height: 100%;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3f4064;
+  text-decoration-thickness: auto;
+  transition-delay: 200ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > a {
+  height: 26.03px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(25, 191, 211);
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul {
+  height: 520px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox {
+  min-width: 220px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title {
+  display: flex;
+  height: 30.1px;
+  padding: 4px 0;
+  margin-bottom: 8px;
+  text-decoration: none;
+  justify-content: start;
+  align-items: center;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a {
+  display: flex;
+  height: 30.1px;
+  padding: 4px 0;
+  text-decoration: none;
+  line-height: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: iranyekan;
+  color: rgb(129, 133, 139);
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title
+  > div.devide {
+  width: 2px;
+  height: 14px;
+  background-color: rgb(239, 64, 86);
+  margin-left: 8px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title
+  > span {
+  display: flex;
+  height: 100%;
+  font-size: 14px;
+  font-family: iranyekan;
+  font-weight: 700;
+  color: rgb(12, 12, 12);
+  align-items: center;
+  text-wrap: nowrap;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title
+  > div {
+  width: 16px;
+  height: 16px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title
+  > div
+  > svg {
+  width: 100%;
+  height: 100%;
+  fill: rgb(12, 12, 12);
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu:hover
+  > a
+  > span
+  > div.catmenuicon
+  > svg {
+  fill: #ef394e;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu:hover
+  > a
+  > span
+  > p {
+  color: #ef394e;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title:hover
+  > span {
+  color: #ef394e;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a.title:hover
+  > div
+  > svg {
+  fill: #ef394e;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu
+  > div.menuitem
+  > ul
+  > div.itembox
+  > a:hover {
+  color: #ef394e;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu:hover
+  > div.menuitem {
+  height: 520px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.catbox
+  > div.catbox2
+  > div.submenu:hover {
+  background-color: #ffffff;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.catbox_shadow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  opacity: 0;
+  transform: scaleZ(0);
+  transition: all 300ms linear;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category
+  > span
+  > div {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category:hover
+  > div.catbox {
+  display: flex;
+  height: 520px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.category:hover
+  ~ div.catbox_shadow {
+  opacity: 1;
+  transform: scaleZ(1);
+}
+
+/*منوی بازشونده دسته بندی کالاها*/
+
+div.main > div.header > header > nav > div.menubar > div.menu > div.menuitems {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.devider {
+  width: 1px;
+  height: 16px;
+  background-color: #e0e0e2;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1
+  > div.menuitem1 {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1
+  > div.menuitem1
+  > a {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1
+  > div.menuitem1
+  > a
+  > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1
+  > div.menuitem1
+  > a
+  > div
+  > img {
+  width: 18px;
+  height: 18px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox1:hover
+  > div.underline {
+  width: 100%;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2
+  > div.menuitem2 {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2
+  > div.menuitem2
+  > a {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2
+  > div.menuitem2
+  > a
+  > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2
+  > div.menuitem2
+  > a
+  > div
+  > img {
+  width: 18px;
+  height: 18px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox2:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3
+  > div.menuitem3 {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3
+  > div.menuitem3
+  > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3
+  > div.menuitem3
+  > a
+  > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3
+  > div.menuitem3
+  > a
+  > div
+  > img {
+  width: 18px;
+  height: 18px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox3:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4
+  > div.menuitem4 {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4
+  > div.menuitem4
+  > a {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4
+  > div.menuitem4
+  > a
+  > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4
+  > div.menuitem4
+  > a
+  > div
+  > img {
+  width: 18px;
+  height: 18px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox4:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5
+  > div.menuitem5 {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5
+  > div.menuitem5
+  > a {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5
+  > div.menuitem5
+  > a
+  > div {
+  width: 18px;
+  height: 18px;
+  margin: 0 0 0 4px;
+  display: flex;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5
+  > div.menuitem5
+  > a
+  > div
+  > img {
+  width: 18px;
+  height: 18px;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.menuitems
+  > div.itembox5:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main > div.header > header > nav > div.menubar > div.menu > div.question {
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.devider {
+  width: 1px;
+  height: 16px;
+  background-color: #e0e0e2;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox1 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox1
+  > div.q1 {
+  width: auto;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox1
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox1
+  > div.q1
+  > a {
+  width: auto;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox1:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox2 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox2
+  > div.q2 {
+  width: auto;
+  height: 38px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox2
+  > div.underline {
+  width: 0;
+  height: 2px;
+  background-color: #ee384e;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox2
+  > div.q2
+  > a {
+  width: auto;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26.04px;
+  color: rgb(98, 102, 109);
+  align-items: center;
+  white-space-collapse: collapse;
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.menu
+  > div.question
+  > div.qbox2:hover
+  > div.underline {
+  width: 100%;
+}
+
+div.main > div.header > header > nav > div.menubar > div.location {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+div.main > div.header > header > nav > div.menubar > div.location > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: rgb(63, 64, 100);
+}
+div.main
+  > div.header
+  > header
+  > nav
+  > div.menubar
+  > div.location
+  > a
+  > div.locatitem {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+/*نوار منوی سایت*/
+
+/*بدنه سایت*/
+div.sitebody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*سوئیپر استوری تبلیغ مشتریان*/
+div.sitebody > div.userstory {
+  width: 1336px;
+  height: 155.72px;
+  padding: 16px 0 0 0;
+  margin: 0 auto;
+  max-width: 1336px;
+}
+div.sitebody > div.userstory > div.storybox {
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userstorywidth {
+  width: 84px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(66, 71, 80) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 11px !important;
+  font-weight: bolder !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(224, 224, 226);
+  position: absolute;
+}
+.mySwiper [class^="swiper-button-"] {
+  top: initial;
+  bottom: 42px;
+}
+.mySwiper [class^="swiper-button-prev"] {
+  margin: 0 40px 0 4px;
+}
+.mySwiper [class^="swiper-button-next"] {
+  margin-left: calc(100% - 138px);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.mySwiper [class^="swiper-button-"] {
+  opacity: 0 !important;
+  transition: all 100ms linear;
+}
+div.adposterbox:hover .mySwiper [class^="swiper-button-"] {
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 4px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  width: 16px !important;
+  height: 6px !important;
+  border-radius: 9999px !important;
+  transition: all 200ms ease-in-out;
+  margin: 8px 4px 0 4px !important;
+}
+
+div.sitebody div.storyitem {
+  width: 84px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+div.sitebody div.storyitem > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+div.sitebody div.storyitem > a > div.userimgborder {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgb(123, 48, 215);
+  background: linear-gradient(
+    135deg,
+    rgba(123, 48, 215, 1) 29%,
+    rgba(214, 0, 255, 1) 100%,
+    rgba(187, 36, 224, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.sitebody div.storyitem > a > div.userimgborder > div.userimgbox {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+}
+div.sitebody div.storyitem > a > div.userimgborder > div.userimgbox > img {
+  border-radius: 50%;
+}
+div.sitebody div.storyitem > a > div.storytext {
+  width: 100%;
+  height: 47.72px;
+  font-family: iranyekan;
+  font-size: 11px;
+  font-weight: 400;
+  color: #23254e;
+  margin-top: 8px;
+}
+/*سوئیپر استوری تبلیغ مشتریان*/
+
+/*سوئیپر پوستر بزرگ سایت*/
+div.sitebody > div.adposterbox {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  max-width: 1920px;
+}
+div.sitebody > div.adposterbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*سوئیپر پوستر بزرگ سایت*/
+
+/*دیجی کالا جت، دیجی پی و ...*/
+div.digicontainer {
+  width: 1336px;
+  height: 95.86px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1676px;
+}
+div.digicontainer > a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+div.digicontainer > a > div.digicontainer-pics {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+}
+div.digicontainer > a > div.digicontainer-more {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f0f0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.digicontainer > a > div.digicontainer-pics > img {
+  width: 52px;
+  height: 52px;
+}
+div.digicontainer > a > span {
+  height: 23.86px;
+  margin-top: 4px;
+  font-family: iranyekan;
+  font-size: 11px;
+  font-weight: 700;
+  color: #3f4064e2;
+}
+/*دیجی کالا جت، دیجی پی و ...*/
+
+/*سوئیپر پیشنهاد ویژه*/
+div.offerswiper {
+  width: 1336px;
+  height: 300px;
+  background-color: #ee384e;
+  border-radius: 16px;
+  padding: 20px 2px;
+  max-width: 1676px;
+}
+.offertitle {
+  width: 173px !important;
+  height: 100%;
+  margin-left: 2px;
+  background-color: #ee384e !important;
+  margin-left: 2px !important;
+}
+.offertitle > a {
+  width: 100%;
+  height: 234.09px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 13px;
+}
+.offertitle > a > div.offeramazing {
+  width: 92px;
+  height: 77px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.offertitle > a > div.offeramazing > img {
+  width: 82%;
+  height: 82%;
+  object-fit: cover;
+}
+.offertitle > a > div.offerimg {
+  width: 145px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+}
+.offertitle > a > div.offerimg > img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8);
+}
+.offertitle > a > div.offertext {
+  height: 30.09px;
+  margin-top: 4px;
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 700px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.offertitle > a > div.offertext > div.icon {
+  width: 18px;
+  height: 18px;
+}
+.offeritem-first {
+  border-radius: 0 8px 8px 0;
+}
+.offeritems {
+  width: 182px !important;
+  height: 100%;
+  padding: 12px 16px;
+  background-color: #ffffff;
+}
+.offeritems > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.offeritems > a > article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.offeritems > a > article > div.slideimg {
+  width: 100%;
+  height: 154px;
+  object-fit: cover;
+  display: flex;
+  justify-content: start;
+}
+.offeritems > a > article > div.slideprice {
+  width: 100%;
+  height: 82px;
+  display: flex;
+  justify-content: start;
+}
+.offeritems > a > article > div.slideprice > div.pricebox {
+  width: 100%;
+  height: 63.63px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.offeritems > a > article > div.slideprice > div.pricebox > div.offerprice {
+  width: 100%;
+  height: 33.59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.offerpercent {
+  width: 34px;
+  height: 20px;
+  padding: 0 4px;
+  background-color: rgb(211, 47, 47);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.offerpercent {
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 550;
+  color: #ffffff;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.finalprice {
+  width: 116px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+  align-items: center;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.finalprice
+  > div.pricetext {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: iranyekan;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3f4064;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.finalprice
+  > div.priceunit {
+  width: 16px;
+  height: 16px;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.offerprice
+  > div.finalprice
+  > div.priceunit
+  > img {
+  width: 16px;
+  height: 16px;
+}
+.offeritems > a > article > div.slideprice > div.pricebox > div.baseprice {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  justify-content: end;
+  padding-left: 20px;
+}
+.offeritems
+  > a
+  > article
+  > div.slideprice
+  > div.pricebox
+  > div.baseprice
+  > span {
+  color: #c0c2c5;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: 1px line-through;
+}
+
+.lastitem {
+  padding: 86px 32px;
+  border-radius: 8px 0 0 8px;
+}
+.offeritems > a > div.moreoffer {
+  width: 100%;
+  height: 88.09px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offeritems > a > div.moreoffer > div.moreimg {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgb(25, 191, 211);
+  padding: 12px;
+}
+.offeritems > a > div.moreoffer > div.moreimg > img {
+  width: 20px;
+  height: 20px;
+}
+.offeritems > a > div.moreoffer > span {
+  margin-top: 12px;
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(63, 64, 100, 0.781);
+}
+/*سوئیپر پیشنهاد ویژه*/
+
+/*شگفت انگیز سوپرمارکتی*/
+div.smbox {
+  width: 1336px;
+  height: 110px;
+  border-radius: 16px;
+  position: relative;
+  max-width: 1676px;
+}
+div.smbox > a.sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 3;
+  text-decoration: none;
+}
+div.smbox > a.sm > div.smpattern {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../media/Supermarketbox/freshPattern.svg) no-repeat;
+  background-color: #f0f0f1;
+  z-index: 2;
+}
+div.smbox > a.sm > div.smgradient {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    267.6deg,
+    rgba(58, 174, 0, 0.1),
+    rgb(242, 242, 242)
+  );
+  opacity: 0.3;
+  z-index: 2;
+}
+div.smbox > a.sm > div.smname {
+  width: 468px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+div.smbox > a.sm > div.smname > div.nameitem1 {
+  width: 64px;
+  height: 100%;
+}
+div.smbox > a.sm > div.smname > div.nameitem1 > img {
+  width: 100%;
+  height: 100%;
+}
+div.smbox > a.sm > div.smname > div.nameitem2 {
+  width: 250px;
+  height: 28px;
+  margin: 0 20px;
+}
+div.smbox > a.sm > div.smname > div.nameitem2 > img {
+  width: 100%;
+  height: 100%;
+}
+div.smbox > a.sm > div.smname > div.nameitem3 {
+  width: 112px;
+  height: 28px;
+  background-color: rgb(57, 174, 0);
+  padding: 0 12px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.smbox > a.sm > div.smname > div.nameitem3 > p {
+  color: rgb(255, 255, 255);
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 700;
+}
+div.smbox > div.smproducts {
+  width: 636.14px;
+  height: 74px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  z-index: 4;
+}
+div.smbox > div.smproducts > div.products {
+  width: 492px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.smbox > div.smproducts > div.products > a {
+  width: 82px;
+  height: 74px;
+  display: flex;
+  position: relative;
+  padding-left: 8px;
+}
+div.smbox > div.smproducts > div.products > a > div.smoff {
+  width: 34px;
+  height: 20px;
+  padding: 2px 4px 0 4px;
+  background-color: rgb(211, 47, 47);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 54px;
+  left: 48px;
+}
+div.smbox > div.smproducts > div.products > a > div.smoff > span {
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 550;
+  color: #ffffff;
+}
+div.smbox > div.smproducts > div.products > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+}
+div.smbox > div.smproducts > a {
+  width: 144.14px;
+  height: 100%;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+div.smbox > div.smproducts > a > div.others {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+div.smbox > div.smproducts > a > div.others > span {
+  width: 76.14px;
+  height: 100%;
+  font-family: iranyekan;
+  font-size: 12px;
+  color: #39ae00;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+div.smbox > div.smproducts > a > div.others > div.othersimg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+/*شگفت انگیز سوپرمارکتی*/
+
+/*المان چهار پوستری*/
+div.fourposter {
+  width: 1336px;
+  height: 241.5px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1676px;
+}
+div.fourposter > a {
+  width: 322px;
+  height: 100%;
+  text-decoration: none;
+}
+div.fourposter > a > div.fpitem {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+div.fourposter > a > div.fpitem > img {
+  width: 322px;
+  height: 100%;
+  border-radius: 16px;
+}
+/*المان چهار پوستری*/
+
+/*شروع خرید بر اساس دسته بندی*/
+div.grouping {
+  width: 1336px;
+  height: 436.16px;
+  padding: 16px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1676px;
+}
+div.grouping > div.gtitle {
+  height: 44.09px;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.grouping > div.gtitle > h3 {
+  height: 100%;
+  font-family: iranyekan;
+  font-size: 21px;
+  font-weight: 500;
+  color: #000000;
+}
+div.grouping > div.gbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+div.grouping > div.gbox > span {
+  display: flex;
+  width: 186.28px;
+  height: 134.06px;
+}
+div.grouping > div.gbox > span > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+div.grouping > div.gbox > span > a > div.gimage {
+  width: 100px;
+  height: 100px;
+}
+div.grouping > div.gbox > span > a > div.gimage > img {
+  width: 100px;
+  height: 100px;
+}
+div.grouping > div.gbox > span > a > p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-family: iranyekan;
+  font-weight: 600;
+  color: rgba(12, 12, 12, 0.85);
+  line-height: 26.06px;
+}
+/*پایان خرید بر اساس دسته بندی*/
+
+/*شروع المان 2 پوستری*/
+div.twoposter {
+  width: 1336px;
+  height: 264px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1676px;
+}
+div.twoposter > a {
+  width: 660px;
+  height: 100%;
+  text-decoration: none;
+}
+div.twoposter > a > div.tpitem {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+div.twoposter > a > div.tpitem > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+/*پایان المان 2 پوستری*/
+
+/*شروع پیشنهاد دیجی کالا*/
+div.digioffer {
+  width: 1336px;
+  height: 395.28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.digioffer > div.dgotitle {
+  width: 100%;
+  height: 76.09px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: iranyekan;
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+div.digioffer > div.dgotitle > h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: iranyekan;
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+div.digioffer > div.dgoswiper {
+  width: 100%;
+  height: 311.19px;
+  margin-top: 8px;
+  border-radius: 16px;
+  border: 1px solid rgb(224, 224, 226);
+}
+
+div.digioffer div.dgoitem {
+  width: 189.72px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.digioffer div.dgoitem > a.top {
+  width: 100%;
+  height: 154.09px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(224, 224, 226, 0.5);
+}
+
+div.digioffer div.dgoitem > a.down {
+  width: 100%;
+  height: 155.09px;
+  text-decoration: none;
+}
+div.digioffer div.itembox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.digioffer div.itembox > div.dgoimg {
+  width: 84px;
+  height: 84px;
+  padding: 12px;
+  background-color: rgb(240, 240, 241);
+  border-radius: 50%;
+}
+div.digioffer div.itembox > div.dgoimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+div.digioffer div.itembox > h4 {
+  width: 145.38px;
+  height: 30.09px;
+  margin-top: 8px;
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(12, 12, 12);
+}
+div.digioffer .dgoitemwidth {
+  width: 189.72px !important;
+}
+div.digioffer .mySwiper3 {
+  border-radius: 16px;
+}
+div.digioffer .dgoitem.dgolastitem {
+  border-left: none;
+}
+
+/*پایان پیشنهاد دیجی کالا*/
+
+/*شروع محبوبترین برندها*/
+div.popularbrands {
+  width: 1336px;
+  height: 224.09px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 16px;
+}
+div.popularbrands > div.pbtitle {
+  width: 100%;
+  height: 44.09px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.popularbrands > div.pbtitle > div.pbstar {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+div.popularbrands > div.pbtitle > div.pbstar > img {
+  width: 24px;
+  height: 24px;
+}
+div.popularbrands > div.pbtitle > p {
+  height: 100%;
+  font-family: iranyekan;
+  font-size: 21px;
+  font-weight: 400;
+  color: #0c0c0c;
+  line-height: 44.09px;
+}
+div.popularbrands > div.pbswiper {
+  width: 100%;
+  height: 118px;
+  margin-top: 12px;
+}
+
+div.popularbrands div.pbitem {
+  width: 142px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.popularbrands div.pbitem > a {
+  width: 142px;
+  height: 100%;
+  padding: 4px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.popularbrands div.pbitem > a > div.pbimg {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.popularbrands div.pbitembox > div.pbimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+div.popularbrands div.pbitembox > div.pbimg > img::after {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  text-align: center;
+  content: attr(alt);
+  background: #fff url(../media/popularbrands/image-placeholder.svg);
+  background-size: contain;
+}
+div.popularbrands .pbitemwidth {
+  width: 142px !important;
+}
+div.popularbrands .mySwiper4 {
+  border-radius: 16px;
+}
+div.popularbrands .pbitem.pblastitem {
+  border-left: none;
+}
+
+/*پایان محبوبترین برندها*/
+
+/*شروع المان بر اساس بازدیدها*/
+div.basedviews {
+  width: 1336px;
+  height: 416.23px;
+}
+div.basedviews > div.bvcontainer {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "a a a b b b c c c d d d"
+    "a a a b b b c c c d d d"
+    "a a a b b b c c c d d d";
+  grid-template-rows: 418.23px;
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 16px;
+}
+div.basedviews > div.bvcontainer > div:nth-child(1) {
+  width: 332.75px;
+  grid-area: a;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews > div.bvcontainer > div:nth-child(2) {
+  width: 332.75px;
+  grid-area: b;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews > div.bvcontainer > div:nth-child(3) {
+  width: 332.75px;
+  grid-area: c;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews > div.bvcontainer > div:nth-child(4) {
+  width: 332.75px;
+  grid-area: d;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.basedviews div.bvsubbox1 {
+  width: 100%;
+  height: 65.45px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+div.basedviews div.bvsubbox1 > h4 {
+  line-height: 33.59px;
+  font-family: iranyekan;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(35, 37, 78);
+}
+div.basedviews div.bvsubbox1 > p {
+  line-height: 23.859px;
+  font-family: iranyekan;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(129, 133, 139);
+}
+div.basedviews div.bvsubbox2 {
+  width: 100%;
+  height: 292.75px;
+  display: grid;
+  grid-template-areas:
+    "e e e e e e f f f f f f"
+    "g g g g g g h h h h h h";
+  grid-template-rows: 145.88px 145.88px;
+}
+div.basedviews div.bvsubbox2 > a:nth-child(1) {
+  grid-area: e;
+  padding: 8px;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+  border-bottom: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews div.bvsubbox2 > a:nth-child(2) {
+  grid-area: f;
+  padding: 8px;
+  border-bottom: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews div.bvsubbox2 > a:nth-child(3) {
+  grid-area: g;
+  padding: 8px;
+  border-left: 1px solid rgba(224, 224, 226, 0.5);
+}
+div.basedviews div.bvsubbox2 > a:nth-child(4) {
+  grid-area: h;
+  padding: 8px;
+}
+div.basedviews div.bvsubbox2 > a > img {
+  width: 129.88px;
+  height: 129.88px;
+  object-fit: contain;
+}
+div.basedviews div.bvsubbox3 {
+  width: 100%;
+  height: 26.03px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0 12px 0;
+}
+div.basedviews div.bvsubbox3 > a {
+  width: 58.25px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+div.basedviews div.bvsubbox3 > a > span {
+  height: 100%;
+  line-height: 26.03px;
+  font-family: iranyekan;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: rgb(25, 191, 211);
+}
+div.basedviews div.bvsubbox3 > a > div {
+  width: 18px;
+  height: 18px;
+}
+
+/*پایان المان بر اساس بازدیدها*/
+
+/*شروع المان دیجی پلاس*/
+div.dgplus {
+  width: 1336px;
+  height: 387px;
+  margin-top: 24px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(148, 27, 128);
+  border-radius: 16px;
+}
+div.dgplus > div.dgplusbox1 {
+  width: 416px;
+  height: 355px;
+  margin-left: 12px;
+  padding-top: 24px;
+  background-image: url(../media/digiplus/plus-widget.png);
+  background-repeat: no-repeat;
+  background-size: 372px 279px;
+  background-position: 0 100%;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin {
+  width: 100%;
+  height: 110.09px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-right: 24px;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > a {
+  width: 128px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > a > img {
+  width: 100%;
+  height: 100%;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > div.dgplustext {
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 0 4px 0;
+  color: rgb(255, 255, 255);
+  line-height: 30.1px;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > button {
+  width: 105.81px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(148, 27, 128);
+  cursor: pointer;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > button > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: iranyekan;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 400;
+}
+div.dgplus > div.dgplusbox1 > div.dgpluslogin > button > div > div.dgarrow {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+div.dgplus > div.dgplusbox2 {
+  width: 868px;
+  height: 355px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+div.dgplus > div.dgplusbox2 > div.delivery {
+  width: 100%;
+  height: 65.59px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.dgplus > div.dgplusbox2 > div.delivery > div.freedv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.dgplus > div.dgplusbox2 > div.delivery > div.freedv > div.dvlogo {
+  width: 24px;
+  height: 24px;
+}
+div.dgplus > div.dgplusbox2 > div.delivery > div.freedv > div.dvlogo > img {
+  width: 100%;
+  height: 100%;
+}
+div.dgplus > div.dgplusbox2 > div.delivery > div.freedv > h4 {
+  line-height: 33.59px;
+  font-family: iranyekan;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  margin-right: 8px;
+}
+div.dgplus div.dgall {
+  height: 26.03px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.dgplus div.dgall > a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+div.dgplus div.dgall > a > span {
+  height: 100%;
+  line-height: 26.03px;
+  font-family: iranyekan;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #b12ba4;
+  display: flex;
+  align-items: center;
+}
+div.dgplus div.dgall > a > div {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+div.dgplus div.dgproducts {
+  width: 100%;
+  height: 280px;
+  padding: 0 0 16px;
+  display: grid;
+  row-gap: 28px;
+  column-gap: 28px;
+  grid-template-areas:
+    "a a b b c c d d e e f f"
+    "g g h h i i j j k k l l";
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(1) {
+  width: 116px;
+  height: 116px;
+  grid-area: a;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(2) {
+  width: 116px;
+  height: 116px;
+  grid-area: b;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(3) {
+  width: 116px;
+  height: 116px;
+  grid-area: c;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(4) {
+  width: 116px;
+  height: 116px;
+  grid-area: d;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(5) {
+  width: 116px;
+  height: 116px;
+  grid-area: e;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(6) {
+  width: 116px;
+  height: 116px;
+  grid-area: f;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(7) {
+  width: 116px;
+  height: 116px;
+  grid-area: g;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(8) {
+  width: 116px;
+  height: 116px;
+  grid-area: h;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(9) {
+  width: 116px;
+  height: 116px;
+  grid-area: i;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(10) {
+  width: 116px;
+  height: 116px;
+  grid-area: j;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(11) {
+  width: 116px;
+  height: 116px;
+  grid-area: k;
+}
+div.dgplus div.dgproducts > div.dgitem:nth-child(12) {
+  width: 116px;
+  height: 116px;
+  grid-area: l;
+}
+div.dgplus div.dgproducts > div.dgitem > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+div.dgplus div.dgproducts > div.dgitem > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*پایان المان دیجی پلاس*/
+
+/*شروع المان دیجی کلاب*/
+div.digiclub {
+  width: 1336px;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: linear-gradient(76.02deg, #35a6c8 33.32%, #007295 71.55%),
+    radial-gradient(21.29% 87.33% at 50% 50.67%, #7cf2f6 0, #35a6c8 100%);
+}
+div.digiclub > div.dgclublogo {
+  width: 119px;
+  height: 33px;
+  margin-right: 24px;
+}
+div.digiclub > div.dgclublogo > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+div.digiclub > div.dgclublogo > a > img {
+  width: 100%;
+  height: 100%;
+}
+div.digiclub > div.dgclubbox {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a > div.dgclubtxt {
+  height: 26.03px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a > div.dgclubtxt > div {
+  width: 20px;
+  height: 20px;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a > div.dgclubtxt > span {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(12, 12, 12, 0.85);
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a > div.dgclubimg {
+  width: 168px;
+  height: 100%;
+}
+div.digiclub > div.dgclubbox > div.dgclubitem > a > div.dgclubimg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.digiclub .brright {
+  border-radius: 0 8px 8px 0;
+}
+div.digiclub .brleft {
+  border-radius: 8px 0 0 8px;
+}
+
+/*پایان المان دیجی کلاب*/
+
+/*شروع المان پرفروشترین کالاها*/
+div.bestselling {
+  width: 1336px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 16px;
+}
+div.bestselling > div.bstitle {
+  width: 100%;
+  height: 44.09px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+div.bestselling > div.bstitle > button {
+  width: 96px;
+  height: 30.09px;
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding-left: 16px;
+}
+div.bestselling > div.bstitle > button > span {
+  width: 80px;
+  height: 100%;
+  font-family: iranyekan;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(25, 191, 211);
+  line-height: 30.1px;
+}
+div.bestselling > div.bstitle > div.bslogo {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+div.bestselling > div.bstitle > div.bslogo > img {
+  width: 24px;
+  height: 24px;
+}
+div.bestselling > div.bstitle > p {
+  height: 100%;
+  font-family: iranyekan;
+  font-size: 21px;
+  font-weight: 550;
+  color: #0c0c0c;
+  line-height: 44.09px;
+}
+div.bestselling > div.bsswiper {
+  width: 1334px;
+  margin-top: 28px;
+  padding: 0 8px;
+}
+
+div.bestselling div.bsitembox {
+  width: 314.5px;
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 20px;
+}
+div.bestselling div.bsitembox > a {
+  width: 100%;
+  height: 86px;
+  text-decoration: none;
+  display: flex;
+}
+div.bestselling div.bsitembox > a > div.bsitem {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+div.bestselling div.bsitembox > a > div.bsitem > div.bsitemimg {
+  width: 86px;
+  height: 86px;
+  margin-left: 12px;
+}
+div.bestselling div.bsitembox > a > div.bsitem > div.bsitemimg > img {
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
+}
+div.bestselling div.bsitembox > a > div.bsitem > span {
+  height: 100%;
+  margin-left: 12px;
+  font-family: iranyekan;
+  font-size: 26px;
+  font-weight: 800;
+  color: rgb(25, 191, 211);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+div.bestselling div.bsitembox > a > div.bsitem > div.bsitemtxt {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+div.bestselling div.bsitembox > a > div.bsitem > div.bsitemtxt > div.bsborder {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(240, 240, 241);
+}
+div.bestselling div.bsitembox > a > div.bsitem > div.bsitemtxt > p {
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(63, 64, 100);
+  text-align: justify;
+  line-height: 26.04px;
+}
+div.bestselling .bsitemwidth {
+  width: 314.5px !important;
+}
+div.bestselling .mySwiper5 {
+  border-radius: 16px;
+}
+/*پایان المان پرفروشترین کالاها*/
+
+/*شروع المان خواندنی ها*/
+
+div.readings {
+  width: 1336px;
+  height: 344.86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+div.readings > div.readingshead {
+  width: 100%;
+  height: 65.59px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.readings > div.readingshead > div.readingstitle {
+  height: 100%;
+  line-height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: iranyekan;
+  color: #000000da;
+  display: flex;
+  align-items: center;
+}
+div.readings > div.readingshead > div.digimag {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.readings > div.readingshead > div.digimag > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+div.readings > div.readingshead > div.digimag > a > span {
+  height: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: iranyekan;
+  color: rgb(25, 191, 211);
+  display: flex;
+  align-items: center;
+}
+div.readings > div.readingshead > div.digimag > a > div {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+div.readings > div.readingsitems {
+  display: grid;
+  grid-template-columns: repeat(4, 323px);
+  column-gap: 12px;
+  grid-template-rows: 279.27px;
+}
+div.readings > div.readingsitems > a {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgb(224, 224, 226);
+  margin-bottom: 4px;
+}
+div.readings > div.readingsitems > a:nth-child(1) {
+  grid-column: 1/2;
+  height: 100%;
+}
+div.readings > div.readingsitems > a:nth-child(2) {
+  grid-column: 2/3;
+  height: 100%;
+}
+div.readings > div.readingsitems > a:nth-child(3) {
+  grid-column: 3/4;
+  height: 100%;
+}
+div.readings > div.readingsitems > a:nth-child(4) {
+  grid-column: 4/5;
+  height: 100%;
+}
+div.readings > div.readingsitems > a > div.readingsimg {
+  width: 100%;
+}
+div.readings > div.readingsitems > a > div.readingsimg > img {
+  object-fit: cover;
+  width: 100%;
+  height: 201.2px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+div.readings > div.readingsitems > a > div.readingstxt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 8px 0 12px 0;
+  padding: 0 16px;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(12, 12, 12);
+  line-height: 26.04px;
+}
+/*پایان المان خواندنی ها*/
+
+div.relative {
+  width: 100%;
+  height: 0;
+  position: relative;
+}
+div.relative > div.supporting {
+  width: 48px;
+  height: 48px;
+  background-color: rgb(239, 64, 86);
+  position: fixed;
+  left: 50px;
+  bottom: 10px;
+  border-radius: 50%;
+  z-index: 900;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/*شروع فوتر*/
+footer {
+  width: 100%;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(240, 240, 241);
+}
+footer > div.footercontainer {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1676px;
+  margin: 0 auto;
+}
+
+/*شروع المان لوگوی دیجی کالا در فوتر*/
+footer > div.footercontainer > div.digifooter {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div.footercontainer > div.digifooter > div.ftr-digilogo {
+  width: 113.33px;
+  height: 30px;
+  margin-left: 16px;
+}
+footer > div.footercontainer > div.digifooter > div.ftr-digilogo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer > div.footercontainer > div.digifooter > div.button {
+  width: 138.2px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgb(224, 224, 226);
+}
+footer > div.footercontainer > div.digifooter > div.button > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+footer
+  > div.footercontainer
+  > div.digifooter
+  > div.button
+  > a
+  > div.backtoptxt {
+  width: auto;
+  height: 100%;
+  line-height: 26.03px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: iranyekan;
+  margin-left: 8px;
+  color: rgb(161, 163, 168);
+}
+footer > div.footercontainer > div.digifooter > div.button > a > div {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+/*پایان المان لوگوی دیجی کالا در فوتر*/
+
+/*شروع پشتیبانی*/
+div.support {
+  width: 100%;
+  height: 26.03px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+div.support > p {
+  line-height: 100%;
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(63, 64, 100);
+}
+div.support > div {
+  width: 0.5px;
+  height: 50%;
+  margin: 0 20px 0 20px;
+  background-color: rgb(161, 163, 168);
+}
+
+/*پایان پشتیبانی*/
+
+/*شروع امکانات دیجی کالا در فوتر*/
+div.footer-features {
+  width: 100%;
+  height: 103.86px;
+  margin: 32px 0 32px 0;
+  display: flex;
+  align-items: center;
+}
+div.footer-features > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.footer-features > a > div {
+  width: 56px;
+  height: 56px;
+}
+div.footer-features > a > p {
+  height: 100%;
+  line-height: 100%;
+  font-family: iranyekan;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(63, 64, 100);
+}
+/*پایان امکانات دیجی کالا در فوتر*/
+
+/*با دیجی کالا و خدمات مشتریان*/
+div.footer-withdigikala {
+  width: 100%;
+  height: 270.16px;
+  display: flex;
+  margin-bottom: 32px;
+}
+div.footer-withdigikala > div.withdigikalabox {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+div.footer-withdigikala > div.withdigikalabox > p {
+  font-family: iranyekan;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: rgb(63, 64, 100);
+  line-height: 33.59px;
+}
+div.footer-withdigikala > div.withdigikalabox > a {
+  font-family: iranyekan;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: rgb(129, 133, 139);
+  line-height: 30.09px;
+  text-decoration: none;
+}
+
+div.footer-withdigikala > div.withdigikalabox > div.socialmediabox {
+  width: 100%;
+  height: 85.59px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+div.footer-withdigikala > div.withdigikalabox > div.socialmediabox > h4 {
+  font-family: iranyekan;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: rgb(63, 64, 100);
+  line-height: 33.59px;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.socialmediabox
+  > div.socialmedia {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.socialmediabox
+  > div.socialmedia
+  > a {
+  width: 40px;
+  height: 40px;
+  margin-left: 32px;
+  text-decoration: none;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.socialmediabox
+  > div.socialmedia
+  > a
+  > div.socialimg {
+  width: 40px;
+  height: 40px;
+}
+
+div.footer-withdigikala > div.withdigikalabox > div.emailbox {
+  width: 100%;
+  height: 112.59px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+div.footer-withdigikala > div.withdigikalabox > div.emailbox > h4 {
+  font-family: iranyekan;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: rgba(63, 64, 100, 0.903);
+  line-height: 33.59px;
+}
+div.footer-withdigikala > div.withdigikalabox > div.emailbox > div.inputemail {
+  width: 100%;
+  height: 67px;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.emailbox
+  > div.inputemail
+  > form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.emailbox
+  > div.inputemail
+  > form
+  > div {
+  flex-grow: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 241);
+  border-radius: 8px;
+  padding: 0 8px;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.emailbox
+  > div.inputemail
+  > form
+  > div
+  > input {
+  width: 244.8px;
+  height: 32.25px;
+  background-color: rgb(240, 240, 241);
+  border: 1px solid rgb(240, 240, 241);
+  writing-mode: horizontal-tb;
+  caret-color: rgb(239, 64, 86);
+  appearance: menulist-button;
+  background-image: none !important;
+  outline-width: 0;
+}
+div.footer-withdigikala
+  > div.withdigikalabox
+  > div.emailbox
+  > div.inputemail
+  > form
+  > input[type="submit"] {
+  width: 54.14px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  background-color: rgb(239, 64, 86);
+  border: 1px solid rgb(239, 64, 86);
+  margin-right: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/*با دیجی کالا و خدمات مشتریان*/
+
+/*دانلود اپلیکیشن دیجی کالا*/
+div.downloadapp {
+  width: 100%;
+  height: 76px;
+  background-color: rgb(60, 75, 109);
+  padding: 8px 20px;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.downloadapp > div.txtlogo {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.downloadapp > div.txtlogo > div.dglogo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.downloadapp > div.txtlogo > div.dglogo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.downloadapp > div.txtlogo > div.downloadtxt {
+  width: auto;
+  height: 100%;
+  font-size: 21px;
+  font-weight: 500;
+  font-family: iranyekan;
+  color: #ffffff;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+div.downloadapp > div.appstorebox {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.downloadapp > div.appstorebox > div.appicons {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+div.downloadapp > div.appstorebox > div.appicons > a.apps {
+  width: 142px;
+  height: 44px;
+  text-decoration: none;
+  margin: 8px;
+}
+div.downloadapp > div.appstorebox > div.appicons > a.apps > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div.downloadapp > div.appstorebox > a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+div.downloadapp > div.appstorebox > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*دانلود اپلیکیشن دیجی کالا*/
+
+/*نمادهای خرید مطمئن*/
+div.symbolsbox {
+  width: 100%;
+  height: 224.03px;
+  padding: 32px 0;
+  display: flex;
+  align-items: start;
+  border-top: 1px solid rgb(240, 240, 241);
+}
+div.symbolsbox > div.aboutdigikala {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+div.symbolsbox > div.aboutdigikala > div.aboutdgkalatxt {
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+}
+div.symbolsbox > div.aboutdigikala > div.aboutdgkalatxt > h1 {
+  font-family: iranyekan;
+  font-size: 21px;
+  font-weight: 600;
+  color: rgb(98, 102, 109);
+  line-height: 44.1px;
+}
+div.symbolsbox > div.aboutdigikala > div.aboutdgkalatxt > p {
+  font-family: iranyekan;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(129, 133, 139);
+  line-height: 26.04px;
+}
+div.symbolsbox > div.symbols {
+  width: 351px;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.symbolsbox > div.symbols > div.symbolitem {
+  width: 109px;
+  height: 109px;
+  margin-right: 8px;
+  padding: 16px;
+  border: 1px solid rgb(224, 224, 226);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.symbolsbox > div.symbols > div.symbolitem > img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+/*نمادهای خرید مطمئن*/
+
+/*حق کپی رایت*/
+div.copyright {
+  width: 100%;
+  height: 88.86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(240, 240, 241);
+  padding: 32px 0;
+}
+div.copyright > p {
+  font-family: iranyekan;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(129, 133, 139);
+  line-height: 23.87px;
+}
+/*کپی رایت*/
+
+/*برندهای زیرمجموعه دیجی کالا*/
+div.other-digi-brands {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  background-color: #f0f0f1;
+}
+div.other-digi-brands > div.digi-brands-box {
+  width: 100%;
+  max-width: 1676px;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+}
+div.other-digi-brands > div.digi-brands-box > a {
+  width: calc(100% / 8);
+  height: 80px;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f1;
+  border-right: 1px solid rgb(224, 224, 226);
+  border-bottom: 1px solid rgb(224, 224, 226);
+}
+div.other-digi-brands > div.digi-brands-box > .dgb2 {
+  width: calc(100% / 7) !important;
+}
+div.other-digi-brands > div.digi-brands-box > .noborder {
+  border-right: none !important;
+}
+div.other-digi-brands > div.digi-brands-box > a > div.brandslogo {
+  height: 20px;
+}
+div.other-digi-brands > div.digi-brands-box > a > div.brandslogo > img {
+  height: 20px;
+  object-fit: contain;
+}
+/*برندهای زیرمجموعه دیجی کالا*/
